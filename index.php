@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style_j.css">
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>210 Elizabeth Street - Coming Soon</title>
   </head>
