@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style_j.css">
 
-    <title>Jebog - Single Page Responsive Coming Soon</title>
+    <title>210 Elizabeth Street - Coming Soon</title>
   </head>
   <body>
 
