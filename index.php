@@ -71,7 +71,7 @@
             </div>
           </div>
         </div>
-        <div class="block block3">
+        <div class="block block3 opensmooth">
           <div class="tb">
             <div class="cell">
 
@@ -79,25 +79,25 @@
 
                 <h3>Please don't hesitate to contact us now.</h3>
 
-                <form method="POST" action="thank-you.php">
+                <form method="POST" action="thank-you.php" id="contact-form">
                   <div class="wrapinput">
-                    <img src="images/user.png" alt="user">
-                    <input type="text" name="fullname" placeholder="Full name" required="">
+                    <label for="name" class="left-label">Full name</label>
+                    <input id="name" type="text" name="fullname" required="" />
                   </div>
 
                   <div class="wrapinput">
-                    <img src="images/email.png" alt="email">
-                    <input type="email" name="email" placeholder="Email" required="">
+                    <label for="email" class="left-label">Email</label>
+                    <input id="email" type="email" name="email" required="" />
                   </div>
 
                   <div class="wrapinput">
-                    <img src="images/phone.png" alt="number">
-                    <input type="number" name="phone" placeholder="Phone" required="">
+                    <label for="phone" class="left-label">Phone</label>
+                    <input id="phone" type="number" name="phone" required="" />
                   </div>
-                  
+
                   <div class="wrapinput">
-                    <img src="images/comment.png" alt="comment">
-                    <textarea rows="3" placeholder="Message"></textarea>
+                    <label for="message" class="left-label">Message</label>
+                    <textarea id="message" rows="3"></textarea>
                   </div>
 
                   <div class="wrapinput">
@@ -106,23 +106,37 @@
                       $_SESSION['val1'] = rand(1,9);
                       $_SESSION['val2'] = rand(1,9);
                     ?>
-                    <label>Security question! <?php echo $_SESSION['val1']. "+" .$_SESSION['val2']. "="; ?></label>
+                    <label
+                    for="sec-ques"
+                    style="
+                      text-align: left !important;
+                      width: 45% !important;
+                      max-width: 400px !important;
+                      display: block;
+                      margin: 0 auto;
+                    "
+                    >Security question! <?php echo $_SESSION['val1']. "+" .$_SESSION['val2']. "="; ?></label>
                     <img src="images/padlock.png" alt="padlock">
                     <input type="number" name="answer" placeholder="Your anwer here..." required="">
                   </div>
                   
-                  <div class="wrapinput">
-                    <input type="submit" name="submit" value="SEND">
+                  <div class="wrapinput" style="
+                    text-align: right !important;
+                    width: 45% !important;
+                    max-width: 400px !important;
+                    margin: 0 auto !important;
+                  ">
+                    <input type="submit" name="submit" value="SUBMIT">
                   </div>
                 </form>
-
-                <div class="atag atagback">
-                  <a href="#" id="goback"><img src="images/prevdark.png" class="img-fluid arrow arrowprev" alt="go back"> &nbsp;GO BACK</a>
-                </div>
 
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="mobile mobile-footer">
+          <img src="images/footer-image.jpg" width="100%" />
         </div>
     </div>
     
