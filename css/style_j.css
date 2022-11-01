@@ -361,9 +361,8 @@ body {
   position: relative;
 }
 .wrapblock .wrap form img {
-  position: absolute;
-  right: 15px;
-  top: 11px;
+  position: relative;
+  margin-bottom: 5px;
 }
 .wrapblock .wrap form textarea {
   width: 100%;
@@ -443,7 +442,7 @@ body {
     margin-bottom: 14px;
   }
   .wrapblock .wrap form img {
-    top: 5px;
+    /* top: 5px; */
   }
 }
 @media only screen and (max-width: 1440px) {
