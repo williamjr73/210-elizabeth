@@ -4,11 +4,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="shortcut icon" href="images/logo11.ico">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style_j.css">
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>210 Elizabeth Street - Coming Soon - Thank You</title>
   </head>
@@ -25,23 +26,50 @@
     </div>
 
     <!-- Head -->
-    <div class="head">
+    <!-- <div class="head">
         <img src="images/logo11.png" class="img-fluid" alt="logo">
-    </div>
+    </div> -->
     
     <!-- Copyrights -->
-    <div class="cp">
+    <!-- <div class="cp">
         <p>&copy; <?php echo date('Y'); ?> Jebog</p>
-    </div>
+    </div> -->
     
     <!-- Main content -->
     <div class="wrapblock">
-        <div class="block block1 blockimg" style="background: url(images/green7.jpg) no-repeat center center;background-size: cover;-webkit-background-size: cover;-moz-background-size: cover;-ms-background-size: cover;-o-background-size: cover;"></div>
-
-        <div class="block block2 blockcustom">
+        <div class="block block1 hidesmooth">
           <div class="tb">
             <div class="cell">
-                <div class="wrap">
+              <div id="daypost"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block block2 blocktransform">
+          <div class="tb">
+            <div class="cell">
+              <div class="content">
+                <div class="top">
+                  <img src="images/header-image.jpg" style="width: 90%;" />
+                  <img
+                    src="images/logo.png"
+                    width="200px"
+                    style="margin: 5px 0 10px;"
+                  />
+                  <p style="font-size: 20px;">
+                    A line of text to here regarding words LOFTS and OFFICES
+                  </p>
+                </div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block block3 opensmooth">
+          <div class="tb">
+            <div class="cell">
+              <div class="wrap">
 
                   <?php
                     session_start();
@@ -59,6 +87,17 @@
                     }
 
                     if ($answer == $s3){
+                      $your_email = 'wboykin@quiicks.com';
+                      $customer_email = $_POST['email'];
+                      $subject = "New Message From Your Website";
+                      $message = $_POST['message'];
+                      $headers = 'From: ' . $_POST['name'] . ' <wboykin@quiicks.com>' . "\r\n" .
+                          'Reply-To: wboykin@quiicks.com' . "\r\n" .
+                          'X-Mailer: PHP/' . phpversion();
+
+                      mail($your_email, $subject, $message, $headers);
+                      mail($customer_email, $subject, $message, $headers);
+
                       ?>
                       <h2 class="main"><span>Thank you!</span></h2>
                       <div class="line"></div>
@@ -72,6 +111,12 @@
                       <div class="line"></div>
                       <div class="wrapdefault">
                         <p>Your security question is wrong!</p>
+                        <ul>
+                          <li>s1 = <? echo $s1; ?></li>
+                          <li>s2 = <? echo $s2; ?></li>
+                          <li>s3 = <? echo $s3; ?></li>
+                          <li>answer = <? echo $answer; ?></li>
+                        </ul>
                       </div>
                       <?php
                     }
