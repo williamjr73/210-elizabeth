@@ -109,8 +109,7 @@
                       display: block;
                       margin: 0 auto;
                     "
-                    >Security question! <?php echo $_SESSION['val1']. "+" .$_SESSION['val2']. "="; ?></label>
-                    <img src="images/padlock.png" alt="padlock">
+                    ><img src="images/padlock.png" alt="padlock" class="padlock"> Security question! <?php echo $_SESSION['val1']. "+" .$_SESSION['val2']. "="; ?></label>
                     <input type="number" name="answer" placeholder="Your anwer here..." required="">
                   </div>
                   
