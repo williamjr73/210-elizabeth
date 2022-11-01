@@ -26,14 +26,14 @@
     </div>
     
     <!-- Head -->
-    <div class="head">
+    <!-- <div class="head">
         <img src="images/logo11.png" class="img-fluid" alt="logo">
-    </div>
+    </div> -->
     
     <!-- Copyrights -->
-    <div class="cp">
+    <!-- <div class="cp">
         <p>&copy; <?php echo date('Y'); ?> Jebog</p>
-    </div>
+    </div> -->
     
     <!-- Main content -->
     <div class="wrapblock">
@@ -44,24 +44,32 @@
             </div>
           </div>
         </div>
-        <div class="block block2">
+        <div class="block block1 hidesmooth">
           <div class="tb">
             <div class="cell">
-                <div class="wrap">
-
-                  <h2 class="main"><span>We</span> are being counted down before publish our new website</h2>
-                  <div id="timepost"></div>
-                  <div class="wrapdefault">
-                    <p>Please contact us below to get the latest update.</p>
-
-                    <div class="atag">
-                      <a href="#" id="contactnow">CONTACT NOW <img src="images/next.png" class="img-fluid arrow" alt="Contact Now"></a>
-                    </div>
-                  </div>
-
+              <div id="daypost"></div>
+            </div>
+          </div>
+        </div>
+        <div class="block block2 blocktransform">
+          <div class="tb">
+            <div class="cell">
+              <div class="content">
+                <div class="top">
+                  <img src="images/header-image.jpg" style="width: 90%;" />
+                  <img
+                    src="images/logo.png"
+                    width="200px"
+                    style="margin: 5px 0 10px;"
+                  />
+                  <p style="font-size: 20px;">
+                    A line of text to here regarding words LOFTS and OFFICES
+                  </p>
                 </div>
+                <div class="bottom"></div>
               </div>
             </div>
+          </div>
         </div>
         <div class="block block3">
           <div class="tb">
