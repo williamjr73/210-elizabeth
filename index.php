@@ -37,13 +37,6 @@
     
     <!-- Main content -->
     <div class="wrapblock">
-        <div class="block block1">
-          <div class="tb">
-            <div class="cell">
-                <div id="daypost"></div>
-            </div>
-          </div>
-        </div>
         <div class="block block1 hidesmooth">
           <div class="tb">
             <div class="cell">
